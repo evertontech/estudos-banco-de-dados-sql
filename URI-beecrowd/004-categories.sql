@@ -1,6 +1,6 @@
 CREATE TABLE categories (
 	"id"	NUMERIC	PRIMARY KEY,
-	"name"	VARCHAR
+	"name"	VARCHAR(40)
 );
 
 INSERT INTO categories("id", "name")
