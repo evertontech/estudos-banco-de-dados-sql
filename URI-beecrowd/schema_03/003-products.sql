@@ -1,15 +1,18 @@
 -- Criação da tabela products
 
 CREATE TABLE products (
-	"id"	NUMERIC		PRIMARY KEY,
-	"name"	VARCHAR(30),
-	amount	NUMERIC,
-	price	NUMERIC
+	"id"			NUMERIC	PRIMARY KEY,
+	"name"			VARCHAR(30),
+	amount			NUMERIC,
+	price			NUMERIC,
+	id_providers	NUMERIC,
+	id_categories	NUMERIC 	REFERENCES categories("id"),
+	FOREIGN KEY (id_providers)	REFERENCES providers("id")
 );
 
 -- Inserção de dados na tabela products
 
-INSERT INTO products("id", "name", amount, price)
+INSERT INTO products("id", "name", amount, price, id_providers, id_categories)
 VALUES
 	(1,	'Two-door wardrobe', 100, 80),
 	(2,	'Dining table',	1000, 560),
