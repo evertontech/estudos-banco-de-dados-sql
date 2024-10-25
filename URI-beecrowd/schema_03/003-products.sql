@@ -14,9 +14,9 @@ CREATE TABLE products (
 
 INSERT INTO products("id", "name", amount, price, id_providers, id_categories)
 VALUES
-	(1,	'Two-door wardrobe', 100, 80),
-	(2,	'Dining table',	1000, 560),
-	(3,	'Towel holder',	10000, 5.50),
-	(4,	'Computer desk', 350, 100),
-	(5,	'Chair', 3000, 210.64),
-	(6,	'Single bed', 750, 99);
+	(1,	'Two-door wardrobe', 100, 800, 6, 8),
+	(2,	'Dining table',	1000, 560, 1, 9),
+	(3,	'Towel holder',	10000, 25.50, 5, 1),
+	(4,	'Computer desk', 350, 320.50, 4, 6),
+	(5,	'Chair', 3000, 210.64, 3, 6),
+	(6,	'Single bed', 750, 460, 1, 2);
