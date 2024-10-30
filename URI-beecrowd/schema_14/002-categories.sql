@@ -14,4 +14,3 @@ VALUES
 	(3, 'Tech'),
 	(4, 'Vintage'),
 	(5, 'Supreme');
-
