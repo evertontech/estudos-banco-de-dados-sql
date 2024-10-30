@@ -1,6 +1,6 @@
 -- CRIAÇÃO DA TABELA LOCATION
 
-CREATE TABLE "location"(
+CREATE TABLE locations(
 	"id"				NUMERIC PRIMARY KEY,
 	"locations_date"	DATE,
 	"id_customers"		NUMERIC,
@@ -9,7 +9,7 @@ CREATE TABLE "location"(
 
 -- INSERÇÃO NA TABELA LOCATION 2616
 
-INSERT INTO "location"("id", "locations_date", "id_customers")
+INSERT INTO locations("id", "locations_date", "id_customers")
 VALUES
 	(1, '2016-10-09', 3),
 	(2, '2016-09-02', 1),
